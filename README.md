@@ -8,6 +8,7 @@ A collection of my school projects from my software development studies at Savon
 | [`Web`](Web) | HTML, JavaScript and React projects |
 | [`.NET`](.NET) | .NET assignments in C# |
 | [`Java`](Java) | Object-oriented programming exercises, exams and Java web programming |
+| [`Python`](Python) | Early Python console exercises and small games |
 
 Each folder has its own README with more details.
 
