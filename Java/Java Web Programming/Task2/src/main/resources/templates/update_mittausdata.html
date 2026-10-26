@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mittaukset App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Mittaukset App</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+<ul class="nav navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/showNewMittausDataForm">Add</a>
+  </li>
+</ul>
+
+
+	  </div>
+	</nav>
+
+	<div class="container">
+
+    <h1>Muokkaa Mittausta</h1>
+    
+ <form action="#" th:action="@{/updateMittausData}" th:object="${mittausData}" method="post">
+    <input type="hidden" th:field="*{id}">
+    <div class="form-group">
+      <label for="mittausyksikko">Mittausyksikko:</label>
+      <input type="text" class="form-control" id="mittausyksikko" th:field="*{mittausyksikko}">
+    </div>
+    <div class="form-group">
+      <label for="maara">Maara:</label>
+      <input type="text" class="form-control" id="maara" th:field="*{maara}">
+    </div>
+    <div class="form-group">
+      <label for="paikkatunniste">Paikkatunniste:</label>
+      <input type="text" class="form-control" id="paikkatunniste" th:field="*{paikkatunniste}">
+    </div>
+    <div class="form-group">
+      <label for="kellonaikaJaPaivamaara">KellonaikaJaPaivamaara:</label>
+      <input type="text" class="form-control" id="kellonaikaJaPaivamaara" th:field="*{kellonaikaJaPaivamaara}">
+    </div>
+    <button type="submit" class="btn btn-primary">Update MittausData</button>
+  </form>
+		
+		
+		
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

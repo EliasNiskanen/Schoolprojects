@@ -1,0 +1,9 @@
+@import url('./main-layout.css');
+@import url('./views/mittaukset-view.css');
+@import url('./views/potilaat-view.css');
+@import url('./views/haku-view.css');    html {
+      --lumo-border-radius-s: calc(var(--lumo-size-m) / 7);
+      --lumo-border-radius-m: calc(var(--lumo-size-m) / 3);
+      --lumo-border-radius-l: var(--lumo-size-m);
+
+    }

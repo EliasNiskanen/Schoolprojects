@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Image App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/uploaded_images">Uploaded images</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <h2 class="text-center">Uploaded images</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Preview</th>
+                <th>Name</th>
+                <th>Owner</th>
+                <th>Download</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:if="${#lists.isEmpty(images)}">
+                <td colspan="6" class="text-center">No images found.</td>
+            </tr>
+            <tr th:each="image : ${images}">
+                <td th:text="${image.id}"></td>
+                <td>
+                    <img th:src="@{'/uploads/' + ${image.name}}" style="width: 50px;"/>
+                </td>
+                <td th:text="${image.name}"></td>
+                <td th:text="${image.owner}"></td>
+                <td>
+                    <a th:href="@{'/uploads/' + ${image.name}}" target="_blank" class="btn btn-primary">Download</a>
+                </td>
+                <td>
+<form th:action="@{'/delete/' + ${image.id}}" method="post">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

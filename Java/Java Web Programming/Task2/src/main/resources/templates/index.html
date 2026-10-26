@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mittaukset App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Mittaukset App</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+<ul class="nav navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/showNewMittausDataForm">Add</a>
+  </li>
+</ul>
+
+
+	  </div>
+	</nav>
+
+	<div class="container mt-3">
+		<h2 class="text-center">Mittauksien Lista</h2>
+		
+		
+		
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Mittausyksikko</th>
+					<th>Maara</th>
+					<th>Paikkatunniste</th>
+					<th>Kellonaika ja päivämäärä</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="mittausData : ${mittausDataList}">
+					<td th:text="${mittausData.id}"></td>
+					<td th:text="${mittausData.mittausyksikko}"></td>
+					<td th:text="${mittausData.maara}"></td>
+					<td th:text="${mittausData.paikkatunniste}"></td>
+					<td th:text="${mittausData.kellonaikaJaPaivamaara}"></td>
+					<td><a th:href="@{/showFormForUpdate/{id}(id=${mittausData.id})}">Edit</a></td>
+					<td><a th:href="@{/deleteMittausData/{id}(id=${mittausData.id})}" class="text-danger">Delete</a></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		
+		
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mittaukset App</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Mittaukset App</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+<ul class="nav navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/showNewMittausDataForm">Add</a>
+  </li>
+</ul>
+
+
+	  </div>
+	</nav>
+
+<div class="container">
+	<h1 class="text-center">Uusi Mittaus</h1>
+	
+	<form method="POST" action="/saveMittausData">
+		<div class="form-group">
+			<label for="mittausyksikko">Mittausyksikko:</label>
+			<input type="text" class="form-control" id="mittausyksikko" name="mittausyksikko" required>
+		</div>
+		<div class="form-group">
+			<label for="maara">Maara:</label>
+			<input type="text" class="form-control" id="maara" name="maara" required>
+		</div>
+		<div class="form-group">
+			<label for="paikkatunniste">Paikkatunniste:</label>
+			<input type="text" class="form-control" id="paikkatunniste" name="paikkatunniste" required>
+		</div>
+		<button type="submit" class="btn btn-primary">Save</button>
+	</form>
+	
+</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

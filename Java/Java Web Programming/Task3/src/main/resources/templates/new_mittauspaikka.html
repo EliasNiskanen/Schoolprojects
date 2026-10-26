@@ -1,0 +1,39 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Uusi mittauspaikka</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Uusi mittauspaikka</h1>
+    <form th:action="@{/mittauspaikka}" method="post">
+        <div class="form-group">
+            <label for="paikkatunniste">Paikkatunniste:</label>
+            <input type="text" class="form-control" id="paikkatunniste" name="paikkatunniste" required>
+        </div>
+        <div class="form-group">
+            <label for="postinumero">Postinumero:</label>
+            <input type="text" class="form-control" id="postinumero" name="postinumero" required>
+        </div>
+        <div class="form-group">
+            <label for="leveysaste">Leveysaste:</label>
+            <input type="number" step="any" class="form-control" id="leveysaste" name="leveysaste" required>
+        </div>
+        <div class="form-group">
+            <label for="pituusaste">Pituusaste:</label>
+            <input type="number" step="any" class="form-control" id="pituusaste" name="pituusaste" required>
+        </div>
+        <div class="form-group">
+            <label for="mittausyksikko">Mittausyksikko:</label>
+            <input type="text" class="form-control" id="mittausyksikko" name="mittausyksikko" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tallenna</button>
+    </form>
+</div>
+</body>
+</html>

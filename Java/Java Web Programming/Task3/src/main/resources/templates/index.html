@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MittausData</title>
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		
+		<h1 style="color:red;">TÄMÄ EI TOIMI, pitää ajella Postmanilla</h1>
+			
+		
+		<div class="mittauspaikka">
+
+			<h1>Mittauspaikka</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Nimi</th>
+						<th>Osoite</th>
+						<th>Postinumero</th>
+						<th>Leveysaste</th>
+						<th>Pituusaste</th>
+						<th>Mittausyksikko</th>
+						<th>Toiminnat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="mittausPaikka : ${mittausPaikkaList}">
+						<td th:text="${mittausPaikka.id}"></td>
+						<td th:text="${mittausPaikka.nimi}"></td>
+						<td th:text="${mittausPaikka.osoite}"></td>
+						<td th:text="${mittausPaikka.postinumero}"></td>
+						<td th:text="${mittausPaikka.leveysaste}"></td>
+						<td th:text="${mittausPaikka.pituusaste}"></td>
+						<td th:text="${mittausPaikka.mittausyksikko}"></td>
+						<td>
+							<a class="btn btn-primary" th:href="@{/showFormForUpdate/{id}(id=${mittausPaikka.id})}">Muokkaa</a>
+							<a class="btn btn-danger" th:href="@{/deleteMittausPaikka/{id}(id=${mittausPaikka.id})}  onclick="return confirm('Haluatko varmasti poistaa mittauspaikan?')"">Poista</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="btn btn-success" th:href="new_mittauspaikka">Lisää mittauspaikka</a>
+		</div>
+
+		<div class="mittausdata">
+			<h1>Mittaustulokset</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Arvo</th>
+						<th>PVM</th>
+						<th>Toiminnat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="mittausData : ${mittausDataList}">
+						<td th:text="${mittausData.id}"></td>
+						<td th:text="${mittausData.value}"></td>
+						<td th:text="${mittausData.date}"></td>
+						<td>
+							<a class="btn btn-info btn-sm" th:href="@{/showFormForUpdate/{id}(id=${mittausData.id})}">Muokkaa</a>
+							<a class="btn btn-danger btn-sm" th:href="@{/deleteMittausData/{id}(id=${mittausData.id})}" onclick="return confirm('Haluatko varmasti poistaa mittaustuloksen?')">Poista</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="btn btn-primary" th:href="@{/showNewMittausDataForm}">Lisää mittaustulos</a>
+		</div>
+	</div>
+</body>
+</html>
