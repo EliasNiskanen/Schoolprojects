@@ -1,0 +1,65 @@
+﻿@page
+@model RazorPhones.Pages.Phones.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Phone</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Phone.Id" class="control-label"></label>
+                <input asp-for="Phone.Id" class="form-control" readonly />
+                <span asp-validation-for="Phone.Make" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone.Make" class="control-label"></label>
+                <input asp-for="Phone.Make" class="form-control" />
+                <span asp-validation-for="Phone.Make" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone.Model" class="control-label"></label>
+                <input asp-for="Phone.Model" class="form-control" />
+                <span asp-validation-for="Phone.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone.RAM" class="control-label"></label>
+                <input asp-for="Phone.RAM" class="form-control" />
+                <span asp-validation-for="Phone.RAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone.PublishDate" class="control-label"></label>
+                <input asp-for="Phone.PublishDate" class="form-control" />
+                <span asp-validation-for="Phone.PublishDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone.Created" class="control-label"></label>
+                <input asp-for="Phone.Created" class="form-control" readonly/>
+                <span asp-validation-for="Phone.Created" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone.Modified" class="control-label"></label>
+                <input asp-for="Phone.Modified" class="form-control" readonly/>
+                <span asp-validation-for="Phone.Modified" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

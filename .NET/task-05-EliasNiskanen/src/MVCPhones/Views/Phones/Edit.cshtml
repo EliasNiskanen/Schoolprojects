@@ -1,0 +1,36 @@
+﻿@model  MVCPhones.Models.Edit
+@{
+}
+
+<form method="post" action="Edit">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Id</label>
+        <input type="number" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Make</label>
+        <input type="text" class="form-control" asp-for="Make">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Model</label>
+        <input type="text" class="form-control" asp-for="Model">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">RAM</label>
+        <input type="number" class="form-control" asp-for="RAM">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">PublishDate</label>
+        <input type="text" class="form-control" asp-for="PublishDate">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Created</label>
+        <input type="text" class="form-control" asp-for="Created" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Modified</label>
+        <input type="text" class="form-control" asp-for="Modified" readonly>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

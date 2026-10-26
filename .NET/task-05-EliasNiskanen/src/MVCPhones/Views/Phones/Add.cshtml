@@ -1,0 +1,24 @@
+﻿@model  MVCPhones.Models.Add
+@{
+}
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Make</label>
+        <input type="text" class="form-control" asp-for="Make">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Model</label>
+        <input type="text" class="form-control" asp-for="Model">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">RAM</label>
+        <input type="number" class="form-control" asp-for="RAM">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">PublishDate</label>
+        <input type="text" class="form-control" asp-for="PublishDate">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

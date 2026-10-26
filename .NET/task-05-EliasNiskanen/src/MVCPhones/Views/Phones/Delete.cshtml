@@ -1,0 +1,38 @@
+﻿@model MVCPhones.Models.Delete
+@{
+}
+
+<form method="post" action="Delete">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Id</label>
+        <input type="number" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Make</label>
+        <input type="text" class="form-control" asp-for="Make" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Model</label>
+        <input type="text" class="form-control" asp-for="Model" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">RAM</label>
+        <input type="number" class="form-control" asp-for="RAM" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">PublishDate</label>
+        <input type="text" class="form-control" asp-for="PublishDate" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Created</label>
+        <input type="text" class="form-control" asp-for="Created" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Modified</label>
+        <input type="text" class="form-control" asp-for="Modified" readonly>
+    </div>
+    <div>
+        <input type="submit" value="Delete" class="btn btn-danger"/>
+    </div>
+
+</form>

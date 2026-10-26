@@ -1,0 +1,22 @@
+﻿@model List<MVCPhones.Data.Phone>
+
+@{
+    ViewData["Title"] = "Phones";
+}
+
+<div class="phones">
+   <a href="/phones/add">Add</a>
+    <ul class="phones">
+
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.DisplayFor(modelItem => item.Make)
+                @Html.DisplayFor(modelItem => item.Model)
+                <a href="phones/edit/@item.Id">edit</a>
+                <a href="phones/delete/@item.Id">delete</a>
+            </li>
+        }
+    </ul>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

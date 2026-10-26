@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{06070D29-9731-4EFA-8FB0-B269B33B4135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnivEnrollerApi", "src\UnivEnrollerApi\UnivEnrollerApi.csproj", "{7D7755CE-C1D4-42ED-8F15-CB3BAFD568DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E50C26A-C7F7-4130-BFD3-3C9E998146D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E50C26A-C7F7-4130-BFD3-3C9E998146D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E50C26A-C7F7-4130-BFD3-3C9E998146D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E50C26A-C7F7-4130-BFD3-3C9E998146D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D7755CE-C1D4-42ED-8F15-CB3BAFD568DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7755CE-C1D4-42ED-8F15-CB3BAFD568DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7755CE-C1D4-42ED-8F15-CB3BAFD568DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7755CE-C1D4-42ED-8F15-CB3BAFD568DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D7755CE-C1D4-42ED-8F15-CB3BAFD568DD} = {06070D29-9731-4EFA-8FB0-B269B33B4135}
+	EndGlobalSection
+EndGlobal

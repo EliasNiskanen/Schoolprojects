@@ -1,0 +1,37 @@
+﻿@page
+@model RazorPhones.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Phone database in Razor Pages</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Model</th>
+            <th>RAM</th>
+            <th>PublishDate</th>
+            <th>Created</th>
+            <th>Modified</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.puhelimet) 
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Model</td>
+                <td>@item.RAM</td>
+                <td>@item.PublishDate</td>
+                <td>@item.Created</td>
+                <td>@item.Modified </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

@@ -1,0 +1,102 @@
+name: GitHub Classroom Workflow
+
+on: 
+  push:
+    branches:
+    - 'main'
+    - '!badges'
+
+jobs:
+  build:
+    env:
+      TASK_ID: co22s-05
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+
+      - name: get hashes for .github folders and test folder
+        uses: theowenyoung/folder-hash@v2
+        id: hashes
+        with:
+          path: |
+            .github/workflows
+            .github/classroom
+            test
+
+      - run: echo hashes ${{steps.hashes.outputs.hash}}
+
+      - name: get hash for src folder
+        uses: theowenyoung/folder-hash@v2
+        id: srcHash
+        with:
+          path:
+            src
+
+      - run: echo src hash ${{steps.srcHash.outputs.hash}}
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore          
+
+      # add id to action so outputs can be used
+      - uses: mikkopa/autograding@v1
+        id: autograder
+        continue-on-error: true
+
+      - name: Make Request
+        id: myRequest
+        uses: fjogeleit/http-request-action@8e939c608aea2d5df19da3e8229cf035f7aa9e4c #master
+        with:
+          url: "https://sav-mik-autograding.azurewebsites.net/api/autograding/${{env.TASK_ID}}"
+          customHeaders: '{"x-functions-key": "${{ secrets.AUTOGRADING_API_KEY }}"}'
+          data: '{"repoOwner": "${{github.repository_owner}}","points": "${{steps.autograder.outputs.Points}}","hashes": "${{steps.hashes.outputs.hash}}","srcHash": "${{steps.srcHash.outputs.hash}}","repo": "${{github.repository}}","commit": "${{github.sha}}","task": "${{env.TASK_ID}}","actor": "${{github.actor}}"}'
+          timeout: 8000
+      - name: Show Response
+        run: echo ${{ steps.myRequest.outputs.response }}
+
+    outputs:
+      grading-score: ${{ steps.autograder.outputs.Points }}
+      
+      
+# job to build custom status badges
+  build-badges:
+    name: Build Badges
+    runs-on: ubuntu-latest
+    if: always()
+    needs: build
+    steps:
+      # need to checkout whole repo
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # switch to badges branch
+      - run: git checkout badges || git checkout -b badges
+
+      # make dir for badges
+      - name: make badges dir
+        run: mkdir -p .github/badges
+
+      # create points bar
+      - name: make points bar
+        uses: markpatterson27/points-bar@v1
+        with:
+          points: ${{ needs.build.outputs.grading-score }}
+          path: '.github/badges/points-bar.svg'
+
+      # commit and push badge if score has changed
+      - name: Commit and push badge
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add '.github/badges'
+          git commit -m "Add/Update badge" || exit 0
+          git push origin badges

@@ -1,0 +1,37 @@
+﻿@model List<MVCPhones.Data.Phone>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Phone database in MVC</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>RAM</th>
+                <th>PublishDate</th>
+                <th>Created</th>
+                <th>Modified</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var phone in Model)
+            {
+                <tr>
+                    <td>@phone.Id</td>
+                    <td>@phone.Make</td>
+                    <td>@phone.Model</td>
+                    <td>@phone.RAM</td>
+                    <td>@phone.PublishDate</td>
+                    <td>@phone.Created</td>
+                    <td>@phone.Modified </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,26 @@
+﻿@page
+@model RazorPhones.Pages.Phones.PhonesModel
+
+@{
+    ViewData["Title"] = "Phones";
+}
+
+<div class="text-center">
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<ul class="phones">
+            <li>Id</li>
+            <li>Model</li>
+            <li>RAM</li>
+        @foreach (var item in Model.Phone) 
+        {
+                <li>@item.Id</li>
+                <li>@item.Model</li>
+                <li>@item.RAM</li>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+        }
+</ul>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
