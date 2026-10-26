@@ -1,0 +1,7 @@
+S:\Kouluhommat\Projekti\Projekti\bin\Debug\Projekti.exe.config
+S:\Kouluhommat\Projekti\Projekti\bin\Debug\Projekti.exe
+S:\Kouluhommat\Projekti\Projekti\bin\Debug\Projekti.pdb
+S:\Kouluhommat\Projekti\Projekti\obj\Debug\Projekti.csprojAssemblyReference.cache
+S:\Kouluhommat\Projekti\Projekti\obj\Debug\Projekti.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\Projekti\obj\Debug\Projekti.exe
+S:\Kouluhommat\Projekti\Projekti\obj\Debug\Projekti.pdb

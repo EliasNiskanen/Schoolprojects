@@ -1,0 +1,12 @@
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\bin\Debug\Ristinolla.exe.config
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\bin\Debug\Ristinolla.exe
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\bin\Debug\Ristinolla.pdb
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.csproj.AssemblyReference.cache
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.Form1.resources
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.Properties.Resources.resources
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.csproj.GenerateResource.cache
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.exe
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.pdb
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.Pelaajat.resources
+S:\Kouluhommat\Ristinolla\Ristinolla\Ristinolla\obj\Debug\Ristinolla.csproj.SuggestedBindingRedirects.cache

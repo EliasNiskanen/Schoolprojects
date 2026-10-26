@@ -1,0 +1,10 @@
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\bin\Debug\Viikko 2 Tehtävä 1.exe.config
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\bin\Debug\Viikko 2 Tehtävä 1.exe
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\bin\Debug\Viikko 2 Tehtävä 1.pdb
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko 2 Tehtävä 1.csproj.AssemblyReference.cache
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko_2_Tehtävä_1.Form1.resources
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko_2_Tehtävä_1.Properties.Resources.resources
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko 2 Tehtävä 1.csproj.GenerateResource.cache
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko 2 Tehtävä 1.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko 2 Tehtävä 1.exe
+S:\Kouluhommat\Projekti\Viikko 2 Tehtävä 1\Viikko 2 Tehtävä 1\obj\Debug\Viikko 2 Tehtävä 1.pdb

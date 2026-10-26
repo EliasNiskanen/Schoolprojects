@@ -1,0 +1,7 @@
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\obj\Debug\Käyttöliittymä projekti 1.csproj.AssemblyReference.cache
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\obj\Debug\Käyttöliittymä projekti 1.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\bin\Debug\Käyttöliittymä projekti 1.exe.config
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\bin\Debug\Käyttöliittymä projekti 1.exe
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\bin\Debug\Käyttöliittymä projekti 1.pdb
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\obj\Debug\Käyttöliittymä projekti 1.exe
+S:\Kouluhommat\Projekti\Käyttöliittymä projekti 1\Käyttöliittymä projekti 1\obj\Debug\Käyttöliittymä projekti 1.pdb

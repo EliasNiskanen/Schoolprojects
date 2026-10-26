@@ -1,0 +1,10 @@
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.csproj.AssemblyReference.cache
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.Properties.Resources.resources
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.csproj.GenerateResource.cache
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\bin\Debug\xyohjelma.exe.config
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\bin\Debug\xyohjelma.exe
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\bin\Debug\xyohjelma.pdb
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.exe
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.pdb
+S:\Kouluhommat\Projekti\xyohjelma\xyohjelma\obj\Debug\xyohjelma.xyohjelma.resources

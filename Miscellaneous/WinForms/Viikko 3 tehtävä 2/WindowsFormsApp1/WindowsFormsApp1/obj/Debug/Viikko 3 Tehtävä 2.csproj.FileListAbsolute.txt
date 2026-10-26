@@ -1,0 +1,10 @@
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Viikko 3 Tehtävä 2.csproj.AssemblyReference.cache
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Viikko 3 Tehtävä 2.csproj.GenerateResource.cache
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Viikko 3 Tehtävä 2.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+S:\Kouluhommat\Projekti\Viikko 3 tehtävä 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

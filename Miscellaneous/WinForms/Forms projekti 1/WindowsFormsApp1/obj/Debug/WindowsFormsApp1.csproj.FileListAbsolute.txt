@@ -1,0 +1,22 @@
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LaskinLomake.resources
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+S:\Kouluhommat\Projekti\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmHenkilot.resources
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmHenkilot.resources
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LaskinLomake.resources
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+S:\Kouluhommat\Projekti\Forms projekti 1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
