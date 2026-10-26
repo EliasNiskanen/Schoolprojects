@@ -1,0 +1,66 @@
+body{
+  background-color: aqua;
+  image-rendering: optimizeQuality;
+  border-image-width: auto;
+  image-resolution:inherit;
+  background-image: url(https://img-9gag-fun.9cache.com/photo/a9EzyjK_460s.jpg);
+  display: flex;
+}
+.app-container {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}
+li{
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+}
+button {
+  background-color: blanchedalmond;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            table,
+            th,
+            td{
+                border: 1px solid black;
+                font-size: 12;
+                text-align: left;
+                vertical-align: top;
+            }
+            input[type=text],
+            select{
+                width: 200px;
+            }
+        </style>
+        <title>Tehtävä 8</title>
+    </head>
+    <body>
+        <h2>Savonia</h2>
+        <p>Wilma</p>
+        <form action="http://animalhospital.freemyip.com/test.php" method="get">
+            <fieldset>
+                <legend> Ilmoittaudu kurssille.</legend>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="etunimi">Etunimi: </label>
+                            </td>
+                            <td>
+                                <input type="text" id="etunimi" name="etunimi" value>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sukunimi">Sukunimi: </label>
+                            </td>
+                            <td>
+                                <input type="text" id="sukunimi" name="sukunimi" value>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Sukupuoli">Sukupuoli: </label>
+                            </td>
+                            <td>
+                                
+                                <input type="radio" id="sukupuoli" name="sukupuoli" value="Nainen">
+                                <label for="nainen">Nainen</label>
+                                <br>
+                                <input type="radio" id="sukupuoli" name="sukupuoli" value="Mies">
+                                <label for="Mies">Mies</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Kurssi">Kurssi: </label>
+                            </td>
+                            <td>                
+                                
+                                <select name="kurssi" id="kurssi">
+                                    <option value="Ohjelmistotuotanto">Ohjelmistotuotanto</option>
+                                    <option value="Web-ohjelmointi 1">Web-ohjelmointi 1</option>
+                                    <option value="CCNA 1">CCNA 1</option>
+                                    <option value="CCNA 2">CCNA 2</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="tyyppi">Tyyppi: </label>
+                            </td>
+                            <td>
+                                <select name="tyyppi" id="tyyppi">
+                                    <option value="lahi">Lähi</option>
+                                    <option value="Eta">Etä</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Harrastukset">Harrastukset: </label>
+                            </td>
+                            <td>
+                                <label for="harrastukset">Harrastukset:</label>
+                                <br>
+                                <input type="checkbox" id="Alkoholinkulutus" name="hobbies-alkoholi">
+                                <label for="alkoholisti">Alkoholin suurkuluttaja.</label>
+                                <br>
+                                <input type="checkbox" id="Tanssi" name="hobbies-tanssi">
+                                <label for="tanssi">Tanssi.</label>
+                                <br>
+                                <input type="checkbox" id="juoksu" name="hobbies-juoksu">
+                                <label for="juoksu">Juokseminen.</label>
+                                <br>
+                                <input type="checkbox" id="Videopelaaminen" name="hobbies-Videopelaaminen">
+                                <label for="Videopelaaminen">Videopelaaminen.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Lähetä">
+                                <input type="reset" value="Tyhjennä">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

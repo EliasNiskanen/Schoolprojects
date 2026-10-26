@@ -1,0 +1,89 @@
+{
+  "Hyllyt": [
+    {
+      "id": 1,
+      "Nimi": "Päähylly"
+    },
+    {
+      "id": 2,
+      "Nimi": "Lisähylly1"
+    },
+    {
+      "id": 3,
+      "Nimi": "Lisähylly2"
+    },
+    {
+      "id": 4,
+      "Nimi": "Varahylly"
+    }
+  ],
+  "Tavara": [
+    {
+      "Nimitys": "Laatikko",
+      "kpl": 4,
+      "id": 1,
+      "Hyllynumero": 6
+    },
+    {
+<<<<<<< HEAD
+      "Nimitys": "isolaatikko",
+      "kpl": 1,
+      "id": 2
+    },
+    {
+      "Nimitys": "Pienilaatikko",
+      "kpl": 2,
+      "id": 3
+    },
+    {
+      "Nimitys": "Miljoonalaatikko",
+      "kpl": 3,
+      "id": 4
+    },
+    {
+      "Nimitys": "Kytkin",
+      "kpl": 4,
+      "id": 5
+    },
+    {
+      "Nimitys": "Lava",
+      "kpl": 4,
+      "id": 6
+=======
+      "Nimitys": "Isolaatikko",
+      "kpl": 10,
+      "id": 2,
+      "Hyllynumero": 2
+    },
+    {
+      "Nimitys": "Pienilaatikko",
+      "kpl": 5,
+      "id": 3,
+      "Hyllynumero": 3
+    },
+    {
+      "Nimitys": "Miljoonalaatikko",
+      "kpl": 2,
+      "id": 4,
+      "Hyllynumero": 4
+    },
+    {
+      "Nimitys": "Kytkin",
+      "kpl": 1,
+      "id": 5,
+      "Hyllynumero": 3
+    },
+    {
+      "Nimitys": "Lava",
+      "kpl": 3,
+      "id": 6,
+      "Hyllynumero": 6
+>>>>>>> d1c69054eff6875197c777e0647ad6de9d805f5d
+    }
+  ],
+  "Hyllytavara": {
+    "hylly_id": 1,
+    "tavara_id": 1,
+    "maara": 10
+  }
+}

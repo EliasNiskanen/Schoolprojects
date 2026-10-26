@@ -1,0 +1,41 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.parent>div {
+    background-color: rebeccapurple;
+    padding: 20px 1;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+div {
+    margin: 5px;
+    text-align: left;
+    padding: 1rem;
+}
+
+input[type=text],
+input[type=password],
+select {
+
+    width: 100%;
+    height: 75%;
+    font-size: 90%;
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+}

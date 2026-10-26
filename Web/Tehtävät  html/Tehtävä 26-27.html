@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="Tehtävä 26-27.js"></script>
+        <title>Tehtävä 26-27</title>
+    </head>
+    <body>
+        <form onsubmit="return false">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="enimi">Nimi: </label>
+                        <br>
+                    </td>
+                    <td>
+                        <input type="text" id="nimi" name="nimi" value>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="osoite">Osoite: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="osoite" name="osoite" value>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="tarkista()">Lisää</button>
+        </form>
+        <table id="taulu"></table>
+    </body>
+</html>

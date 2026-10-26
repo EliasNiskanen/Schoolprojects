@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Tehtävä 34-36.css">
+        <title>Tehtävä 34-38</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="Tehtävä 34-36.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="Row">
+                    <div class="Cell" style="width:15%"><label for="fin">Suomeksi</label></div>
+                    <div class="Cell" style="width:85%"><input id="fin" checked="checked" name="lang" type="radio" value="fin">
+                    </div>
+                </div>
+                <div class="Row">
+                    <div class="Cell"><label for="eng2">In English</label></div>
+                    <div class="Cell"><input id="eng" name="lang" type="radio" value="eng"></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell">Id</div>
+                    <div class="Cell"><input id="customerid" type="number"></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell" id="nametext">Nimi</div>
+                    <div class="Cell"><input id="name" type="text"></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell" id="addresstext">Osoite</div>
+                    <div class="Cell"><input id="address" type="text"></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell" id="postalnumber">Postinumero</div>
+                    <div class="Cell"><input id="postalnumber" type="number"></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell" id="postalaretext">Postitoimipaikka</div>
+                    <div class="Cell"><input id="postaloffice" type="text"></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell" id="customertypetext">Asiakastyyppi</div>
+                    <div class="Cell"><select type="text" id="customertype"><option value="0">Kaikki</option><option value="1">Yritys</option><option value="2">Yksityishenkilö</option><option value="3">Rekisteröity yhdistys</option></select></div>
+                </div>
+                <div class="Row">
+                    <div class="Cell"></div>
+                    <div class="Cell">
+                        <button id="fetchData" class="btn btn-secondary">Hae tiedot</button>   
+                        <button id="addC" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addCustomer">Lisää asiakas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nimi</th>
+                    <th>Osoite</th>
+                    <th>Postinumero</th>
+                    <th>Postitoimipaikka</th>
+                    <th>Luontipäivä</th>
+                    <th>Asiakastyyppi</th>
+                    <th>Muokkaa</th>
+                    <th>Poista</th>
+                </tr>
+                <tbody id="taulu">
+                </tbody>
+            </thead>
+        </table>
+        <div class="modal fade" id="addCustomer" tabindex="-1" role="dialog" aria-labelledby="addCustomerLabel" aria-hidden="true" >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addCustomerLabel">Lisää asiakas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group" id="add">
+                                <label for="scustomersId" id="addId">ID</label>
+                                <textarea class="form-control" id="scustomerid" rows="1"></textarea>
+    
+                                <label for="scustomersName" id="addName">Nimi</label>
+                                <textarea class="form-control" id="sname" rows="1"></textarea>
+    
+                                <label for="scustomersAddress" id="addAdress">Osoite</label>
+                                <textarea class="form-control" id="saddress" rows="1"></textarea>
+    
+                                <label for="scustomersPostalNumber" id="addPostalnumber">Postinumero</label>
+                                <textarea class="form-control" id="spostalnumber" rows="1"></textarea>
+    
+                                <label for="scustomersPostalArea" id="addPostalarea">Postitoimipaikka</label>
+                                <textarea class="form-control" id="spostaloffice" rows="1"></textarea>
+    
+                                <label for="screatedDate" id="createdDate">Luontipäivä</label>
+                                <textarea class="form-control" id="screateddate" rows="1" readonly=""></textarea>
+                                <div class="input-group mb-3">
+                                    <label for="saddcustomerType" id="addType">Asiakastyyppi</label>
+                                    <select class="form-control" id="saddcustomerType">
+                                        <option value="3" id="thort">Rekisteröityhdistys</option>
+                                        <option value="2" id="second">Yksityishenkilö</option>
+                                        <option value="1" id="first">Yritys</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-secondary" id="submitcustomer">Lähetä</button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="editCustomer" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Muokkaa asiakasta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group" id="add">
+                            <label for="ecustomersId" id="addId">ID</label>
+                            <textarea class="form-control" id="ecustomerid" rows="1"></textarea>
+
+                            <label for="ecustomersName" id="addName">Nimi</label>
+                            <textarea class="form-control" id="ename" rows="1"></textarea>
+
+                            <label for="ecustomersAddress" id="addAdress">Osoite</label>
+                            <textarea class="form-control" id="eaddress" rows="1"></textarea>
+
+                            <label for="ecustomersPostalNumber" id="addPostalnumber">Postinumero</label>
+                            <textarea class="form-control" id="epostalnumber" rows="1"></textarea>
+
+                            <label for="ecustomersPostalArea" id="addPostalarea">Postitoimipaikka</label>
+                            <textarea class="form-control" id="epostaloffice" rows="1"></textarea>
+
+                            <label for="ecreatedDate" id="createdDate">Luontipäivä</label>
+                            <textarea class="form-control" id="ecreateddate" rows="1" readonly=""></textarea>
+                            <div class="input-group mb-3">
+                                <label for="eaddcustomertype" id="addType">Asiakastyyppi</label>
+                                <select class="form-control" id="eaddcustomertype">
+                                    <option value="3" id="thort">Rekisteröityhdistys</option>
+                                    <option value="2" id="second">Yksityishenkilö</option>
+                                    <option value="1" id="first">Yritys</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-secondary" id="ecustom">MUOKKAA</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div class="modal" id="editCustomer" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Muokkaa asiakasta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group" id="add">
+                                <label for="ecustomersId" id="addId">ID</label>
+                                <textarea class="form-control" id="ecustomerid" rows="1"></textarea>
+    
+                                <label for="ecustomersName" id="addName">Nimi</label>
+                                <textarea class="form-control" id="ename" rows="1"></textarea>
+    
+                                <label for="ecustomersAddress" id="addAdress">Osoite</label>
+                                <textarea class="form-control" id="eaddress" rows="1"></textarea>
+    
+                                <label for="ecustomersPostalNumber" id="addPostalnumber">Postinumero</label>
+                                <textarea class="form-control" id="epostalnumber" rows="1"></textarea>
+    
+                                <label for="ecustomersPostalArea" id="addPostalarea">Postitoimipaikka</label>
+                                <textarea class="form-control" id="epostaloffice" rows="1"></textarea>
+    
+                                <label for="ecreatedDate" id="createdDate">Luontipäivä</label>
+                                <textarea class="form-control" id="ecreateddate" rows="1" readonly=""></textarea>
+                                <div class="input-group mb-3">
+                                    <label for="eaddcustomerType" id="addType">Asiakastyyppi</label>
+                                    <select class="form-control" id="eaddcustomerType">
+                                        <option value="3" id="thort">Rekisteröityhdistys</option>
+                                        <option value="2" id="second">Yksityishenkilö</option>
+                                        <option value="1" id="first">Yritys</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-secondary" id="editcustomer">MUOKKAA</button>
+                                <div class="modal" id="editCustomer" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Muokkaa asiakasta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group" id="add">
+                            <label for="ecustomersId" id="addId">ID</label>
+                            <textarea class="form-control" id="ecustomerid" rows="1"></textarea>
+
+                            <label for="ecustomersName" id="addName">Nimi</label>
+                            <textarea class="form-control" id="ename" rows="1"></textarea>
+
+                            <label for="ecustomersAddress" id="addAdress">Osoite</label>
+                            <textarea class="form-control" id="eaddress" rows="1"></textarea>
+
+                            <label for="ecustomersPostalNumber" id="addPostalnumber">Postinumero</label>
+                            <textarea class="form-control" id="epostalnumber" rows="1"></textarea>
+
+                            <label for="ecustomersPostalArea" id="addPostalarea">Postitoimipaikka</label>
+                            <textarea class="form-control" id="epostaloffice" rows="1"></textarea>
+
+                            <label for="ecreatedDate" id="createdDate">Luontipäivä</label>
+                            <textarea class="form-control" id="ecreateddate" rows="1" readonly=""></textarea>
+                            <div class="input-group mb-3">
+                                <label for="eaddcustomertype" id="addType">Asiakastyyppi</label>
+                                <select class="form-control" id="eaddcustomertype">
+                                    <option value="3" id="thort">Rekisteröityhdistys</option>
+                                    <option value="2" id="second">Yksityishenkilö</option>
+                                    <option value="1" id="first">Yritys</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-secondary" id="ecustom">MUOKKAA</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

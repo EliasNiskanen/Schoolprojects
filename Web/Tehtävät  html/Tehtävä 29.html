@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#t").hide();
+                $("#l").hide();
+                $("#r").hide();
+
+                $("#eka").click(function () {
+                    $("#t").show(2000).fadeOut(3000);
+                    $("#l").hide();
+                    $("#r").hide();
+                });
+
+                $("#toka").click(function () {
+                    $("#l").show(2000).fadeOut(3000);
+                    $("#t").hide();
+                    $("#r").hide();
+                });
+                $("#kolmas").click(function () {
+                    $("#r").show(2000).fadeOut(5000);
+                    $("#t").hide();
+                    $("#l").hide();
+                });
+            });
+        </script>
+        <style>
+            body {
+                margin: auto;
+                width: 50%;
+                zoom: 100%;
+                padding: 8px;
+            }
+        </style>
+        <title>Tehtävä 29</title>
+    </head>
+    <body>
+        <nav>
+            <a id="eka" href="#t">Ensimmäinen</a>
+            <a id="toka" href="#l">Toinen</a>
+            <a id="kolmas" href="#r">Kolmas</a>
+        </nav>
+        <div id="t" style="display: none;">
+            <article>
+                <h2>Ensimmäinen</h2>
+                <dl>
+                    <img src="1.png">
+                    <br>
+                    "tähän ensimmäisen linkin takaa tuleva teksti"
+                </dl>
+            </article>
+        </div>
+        <div id="l" style="display: none;">
+            <article>
+                <h2>Toinen</h2>
+                <dl>
+                    <img src="2.png">
+                    <br>
+                    "tähän toisen linkin takaa tuleva teksti"
+                </dl>
+            </article>
+        </div>
+        <div id="r" style="display: none;">
+            <article>
+                <h2>Kolmas</h2>
+                <dl>
+                    <img src="3.png">
+                    <br>
+                    "tähän kolmannen linkin takaa tuleva teksti"
+                </dl>
+            </article>
+        </div>
+        <br>
+    </body>
+</html>
